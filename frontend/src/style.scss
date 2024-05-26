@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//navbar
+.nav-container {
+    background-color: rgb(131, 131, 212);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .link {
+            text-decoration: none;
+            color: black;
+        }
+
+    }
+}
+
+//register
+.main {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 80px;
+
+    .form-container {
+        height: 50vh;
+        width: 20%;
+        background-color: rgb(131, 131, 212);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .form {
+
+            h3 {
+                padding-bottom: 10px;
+            }
+
+            .div {
+                padding: 10px;
+
+                .input {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 4px;
+                    text-decoration: none;
+                    border: none;
+                }
+
+            }
+            .btn{
+                height: 20px;
+                width: 80px;
+                object-fit: cover;
+                background: rgb(0, 0, 0);
+                border: none;
+                margin: 10px;
+                border-radius: 5px;
+                color: white;
+            }
+
+        }
+
+        .error{
+            position: absolute;
+            bottom: 30px;
+            right: 10px;
+            background-color: rgb(233, 168, 168);
+            height:20px;
+            border-radius: 5px;
+            padding: 10px;
+            transition: ease-in 3s;
+        }
+        .success{
+            position: absolute;
+            bottom: 30px;
+            right: 10px;
+            background-color:rgb(136, 203, 136);
+            height:20px;
+            border-radius: 5px;
+            padding: 10px;
+            transition: ease-in 3s;
+        }
+    }
+}

@@ -10,11 +10,8 @@ export const Login = () => {
   })
   const [error, seterror] = useState("")
   const [success, setsuccess] = useState("")
-  const [isloggedin, setisloggedin] = useState(false)
 
-  const login = setisloggedin(true)
 
-  const logout = setisloggedin(false)
 
   function handleChange(e) {
     setData({
@@ -40,7 +37,6 @@ export const Login = () => {
       })
       console.log(response);
       seterror("")
-      login()
       setsuccess("Succesfully LoggedIn")
 
       setTimeout(() => {
